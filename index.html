@@ -9,7 +9,7 @@
   <!-- Site Properties -->
   <title>Homepage - Semantic</title>
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.scss">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 
 
   <style type="text/css">
@@ -76,7 +76,7 @@
     }
 
     @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
+      .ui.fixed.menu.following {
         display: none !important;
       }
       .secondary.pointing.menu .item,
@@ -132,8 +132,24 @@
 </head>
 <body>
 
+
+<div class="ui fixed inverted main menu">
+  <div class="ui container">
+    <a class="launch icon toc item">
+      <i class="content icon"></i>
+    </a>
+    <div class="right menu">
+      
+          <div class="textwidget item"><p><i class="phone icon"></i>(604) 543 2356</p></div>
+          <div class="textwidget item"><p><i class="mail icon"></i>info@prestigepanelbc.com</p></div>
+      
+    </div>
+  </div>
+</div>
+
+
 <!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
+<div class="ui large top fixed hidden menu following">
   <div class="ui container">
     <a class="active item">Home</a>
     <a class="item">Pricing</a>
@@ -146,17 +162,20 @@
   </div>
 </div>
 
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-  <a class="active item">Home</a>
-  <a class="item">Work</a>
-  <a class="item">Company</a>
-  <a class="item">Careers</a>
-</div>
+
 
 
 <!-- Page Contents -->
 <div class="pusher">
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a class="item">Home</a>
+    <a class="item">Pricing</a>
+    <a class="item">Specs</a>
+    <a class="item">Contact</a>
+</div>
+
   <div class="ui inverted vertical masthead center aligned segment">
 
     <div class="ui container">
@@ -177,7 +196,7 @@
 
     <div class="ui text container">
       <h1 class="ui inverted header">
-        Build Net Zero Homes Faster
+        Build Faster.
       </h1>
       <h2>Prestige Panels are now available in BC. </h2>
       <div class="ui huge primary button">Get a quote <i class="right arrow icon"></i></div>

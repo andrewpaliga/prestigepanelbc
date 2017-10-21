@@ -8,7 +8,7 @@ title: Prestige Panel BC - Structural Insulated Panels SIP for Net Zero Efficien
         Build net-zero faster.
       </h1>
       <h2>Prestige Panel™ is the most efficient net-zero construction technology available on the market. </h2>
-      <div class="ui huge primary button">Get a quote <i class="right arrow icon"></i></div>
+      <div class="ui huge primary button quotebtn">Get a quote <i class="right arrow icon"></i></div>
     </div>
 
   </div>
@@ -131,4 +131,31 @@ of quality and durability of our building. The team surpassed our expectations i
       </div>
   </div>
 </div>
+ 
+<div class="ui mini modal">
+    <div class="header">
+       Get a quote
+    </div>
+    <div class="content">
+      <form method="post" id="emailform" action="http://formspree.io/paliga@gmail.com">        
+        <div class="ui big form">
+            <div class="field">
+              <input placeholder="E-mail" type="text">
+            </div>
+        </div>
+      </form>
+    </div>
+    <div class="actions">
+      <input type="submit" value="Send me a quote" form="emailform" class="ui primary large button">
+    </div>
+</div>
+ </form>
 
+<script>
+$('.quotebtn').click(function(){
+  $('.ui.modal')
+    .modal('show')
+  ;
+});
+
+</script>

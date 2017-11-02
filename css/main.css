@@ -67,6 +67,14 @@
       font-size: 1.33em;
     }
 
+    .ui.vertical.stripe ul {
+      font-size: 1.33em;
+    }
+
+    .ui.vertical.stripe li {
+      font-size: 1.33em;
+    }
+
     .ui.quoteimage img{
       height: 120px;
       padding: 20px 0;
